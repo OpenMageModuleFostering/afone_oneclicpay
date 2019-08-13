@@ -1,0 +1,19 @@
+<?php
+// Get data
+$oneclicpay = Mage::registry( 'oneclicpay' );
+
+if ($oneclicpay['url-config']=="HOMOLOGATION")
+{
+	echo "<center><b><span style='color:red'>PAIEMENT DE TEST</span></b></center>";
+}
+?>
+
+<p><?php echo $this->__('Please wait, you will be redirected to the payment form.');?> <a href="javascript:document.oneclicpay.submit();"><?php echo $this->__('Or click here.');?></a></p>
+
+<form name="oneclicpay" method="post" action="<?php echo $oneclicpay['form-action']; ?>">
+    <?php echo $oneclicpay['form']; ?> 
+</form>
+
+<script type="text/javascript">
+    document.oneclicpay.submit();
+</script>

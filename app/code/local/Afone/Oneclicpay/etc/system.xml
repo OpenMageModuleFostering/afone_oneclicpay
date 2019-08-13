@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<config>
+  <sections>
+    <payment>
+      <groups>
+        <oneclicpay translate="label comment" module="oneclicpay">
+          <label>Oneclicpay</label>
+          <comment><![CDATA[OneClicPay est une solution de paiement sécurisé sur Internet. Véritable TPE Virtuel, OneClicPay permet d’encaisser les paiements réalisés sur Internet 24 heures sur 24 et 7 jours sur 7. <br/>Plus d'information sur <a href="http://docs.oneclicpay.com/">la documentation officielle</a>.]]></comment>
+          <frontend_type>text</frontend_type>
+          <sort_order>600</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </active>
+            <title translate="label comment">
+              <label>Title</label>
+              <comment>
+                  <![CDATA[Texte affiché au client lors du choix du mode paiement]]>
+              </comment>
+              <frontend_type>text</frontend_type>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <order_status translate="label">
+              <label>New Order Status</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_order_status</source_model>
+              <sort_order>50</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </order_status>
+            <sort_order translate="label">
+              <label>Sort Order</label>
+              <frontend_type>text</frontend_type>
+			        <sort_order>100</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </sort_order>
+            <tpe_no translate="label comment">
+                <label>TPE number</label>
+                <comment>
+                  <![CDATA[Votre numéro de TPE vous sera communiqué par AfonePaiement]]>
+                </comment>
+                <frontend_type>text</frontend_type>
+                <sort_order>80</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+            </tpe_no>
+            <secret_key translate="label comment">
+                <label>Secret Key</label>
+                <comment>
+                  <![CDATA[Votre clé secrète vous sera communiquée par AfonePaiement (elle doit rester personnelle et ne jamais être communiquée)]]>
+                </comment>
+                <frontend_type>text</frontend_type>
+                <sort_order>81</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+            </secret_key>
+            <devise translate="label">
+                <label>Devise</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>90</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+            </devise>
+            <langue translate="label">
+                <label>Language</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>100</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+            </langue>
+            <url_gateway_config translate="label comment">
+                <label>URL Gateway Configuration</label>
+                <comment>
+                  <![CDATA[L'homologation vous permet de tester votre installation. La production est à activer une fois les tests validés.]]>
+                </comment>
+                <frontend_type>select</frontend_type>
+                <source_model>oneclicpay/source_gatewayConfig</source_model>
+                <sort_order>83</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+            </url_gateway_config>
+            <url_gateway_homologation translate="label">
+                <label>Gateway URL for approval</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>84</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+            </url_gateway_homologation>
+            <url_gateway_production translate="label">
+                <label>Gateway URL for production</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>85</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>0</show_in_store>
+            </url_gateway_production>
+          </fields>
+        </oneclicpay>
+      </groups>
+    </payment>
+  </sections>
+</config>

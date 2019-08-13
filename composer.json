@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Afone_Oneclicpay",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "The extension provides Oneclicpay payment integration. ",
+    "authors": [
+    {
+        "name": "Afone",
+        "email": "smalinge@afone.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Afone_Oneclicpay>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Afone_Oneclicpay>
+    </modules>
+</config>
